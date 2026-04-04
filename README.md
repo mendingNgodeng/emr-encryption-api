@@ -94,11 +94,11 @@ bunx prisma migrate dev --name init
 ```bash
 bun run dev
 ```
-Server berjalan di `http://localhost:3000` 🎉
+Server berjalan di `http://localhost:3000` 
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### `GET /`
 Health check & info sistem.
