@@ -1,4 +1,4 @@
-# 🏥 EMR Encryption API
+# EMR Encryption API
 
 > Implementasi enkripsi hybrid **RSA-2048 + AES-256-GCM** untuk keamanan data Rekam Medis Elektronik (RME) berbasis REST API.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📖 Tentang Proyek
+## Tentang Proyek
 
 Proyek ini merupakan implementasi sistem enkripsi data rekam medis elektronik menggunakan algoritma **hybrid RSA + AES**. Setiap field sensitif pasien (nama, NIK, diagnosis, obat) dienkripsi sebelum disimpan ke database, sehingga data tidak dapat dibaca meskipun database berhasil diakses oleh pihak tidak berwenang.
 
@@ -25,7 +25,7 @@ Keduanya dikombinasikan untuk mendapatkan keunggulan masing-masing: **kecepatan 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime** — [Bun](https://bun.sh)
 - **Framework** — [Hono](https://hono.dev)
@@ -35,7 +35,7 @@ Keduanya dikombinasikan untuk mendapatkan keunggulan masing-masing: **kecepatan 
 
 ---
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 emr-encryption-api/
@@ -56,7 +56,7 @@ emr-encryption-api/
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 ### Prasyarat
 - [Bun](https://bun.sh) versi 1.x
@@ -196,7 +196,7 @@ Hapus data rekam medis berdasarkan ID.
 
 ---
 
-## 🔐 Alur Enkripsi
+## Alur Enkripsi
 
 ```
 Data Plaintext (nama, nik, diagnosis, obat)
@@ -232,7 +232,7 @@ Ciphertext    → [AES Key + IV]    → Plaintext
 
 ---
 
-## 📊 Parameter Teknis
+## Parameter Teknis
 
 | Parameter | Nilai |
 |-----------|-------|
@@ -246,6 +246,6 @@ Ciphertext    → [AES Key + IV]    → Plaintext
 
 ---
 
-## 📜 Lisensi
+## Lisensi
 
 [MIT](LICENSE) © 2026
