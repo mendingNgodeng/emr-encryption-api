@@ -1,0 +1,21 @@
+{
+  "name": "rekam-medis-enkripsi",
+  "version": "1.0.0",
+  "description": "Implementasi Enkripsi Hybrid RSA+AES untuk Rekam Medis Elektronik",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "generate:keys": "bun run scripts/generateKeys.ts"
+  },
+  "dependencies": {
+   "@prisma/client": "^6.19.0",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+      "prisma": "^6.19.0",
+    "@types/bun": "latest"
+  }
+}

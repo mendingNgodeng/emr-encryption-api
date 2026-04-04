@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model RekamMedis {
+  id                 String   @id @default(cuid())
+  namaEncrypted      String
+  nikEncrypted       String
+  diagnosisEncrypted String
+  obatEncrypted      String
+  encryptedKey       String   // Kunci AES dienkripsi dengan RSA public key
+  iv                 String   // Initialization Vector untuk AES-GCM
+  authTag            String   // Auth tag dari AES-GCM
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
