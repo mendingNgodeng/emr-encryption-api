@@ -8,7 +8,13 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
-    "generate:keys": "bun run scripts/generateKeys.ts"
+    "generate:keys": "bun run scripts/generateKeys.ts",
+    "test:avalanche": "bun run scripts/testAvalanche.ts",
+    "test:entropy": "bun run scripts/testEntropy.ts",
+    "test:keysensitivity": "bun run scripts/testKeySensitivity.ts",
+    "test:performance": "bun run scripts/testPerformance.ts",
+    "test:authtag": "bun run scripts/testAuthTag.ts",
+    "test:all": "bun run scripts/testAvalanche.ts && bun run scripts/testEntropy.ts && bun run scripts/testKeySensitivity.ts && bun run scripts/testPerformance.ts && bun run scripts/testAuthTag.ts"
   },
   "dependencies": {
    "@prisma/client": "^6.19.0",

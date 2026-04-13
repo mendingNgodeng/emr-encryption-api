@@ -1,4 +1,4 @@
-// Jalankan file ini SEKALI untuk generate RSA key pair
+// untuk generate RSA key pair
 // bun run scripts/generateKeys.ts
 
 import crypto from "node:crypto";
